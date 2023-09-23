@@ -1,0 +1,5 @@
+It's an adoption of the "[Domain-Driven Design In Practice](https://www.pluralsight.com/courses/domain-driven-design-in-practice)" course's [samples](https://github.com/vkhorikov/DddInAction) to .NET 6 / EF Core 6. I had to make some (questionable) adjustments to keep the original DB model untouched due to discrepancies in functionality between NHibernate and EF Core.
+
+Another big difference is in the UI, which is simplified a bit. Instead of writing a boilerplate MVVM code, I used the [Community Toolkit](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/introduction) for observables and commands. Also, I did drop a dialog window functionality, so all pages now are controlled by and embedded into the MainWindow.
+
+You should create a database using the attached SQL script. If necessary, adjust a connection string before running any of the examples. It's in the "App.xaml.cs" of all UI projects and AtmSpecs.cs of the "1-DddInPractice-EventsClassicApproach" solution.
